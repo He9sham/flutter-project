@@ -1,56 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(birthdaycardapp());
+  runApp(mybirthdaycard());
 }
 
-class birthdaycardapp extends StatelessWidget {
+class mybirthdaycard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        floatingActionButton: FloatingActionButton(onPressed: () {}),
-        appBar: AppBar(
-          title: Text("the is my app"),
-        ),
-        body: Row(
-          mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              height: 60,
-              width: 100,
-              color: Colors.blue,
-              child: Center(
-                child: Text("my photo"),
-              ),
-            ),
-            Container(
-              height: 60,
-              width: 100,
-              color: Colors.green,
-              child: Center(
-                child: Text("my lap"),
-              ),
-            ),
-            Container(
-              height: 60,
-              width: 100,
-              color: Colors.blueGrey,
-              child: Center(
-                child: Text("settings"),
-              ),
-            ),
-            Container(
-              height: 60,
-              width: 100,
-              color: Colors.red,
-              child: Center(
-                child: Text("exit"),
-              ),
-            ),
-          ],
+        backgroundColor: Color(0xffD2BCD5),
+        body: Center(
+          child: Image(
+            image: AssetImage(
+                'image/2022-01-19_06-29-41-33803e677e5b58cfcf6c40e60220beb3.png'),
+          ),
         ),
       ),
     );
